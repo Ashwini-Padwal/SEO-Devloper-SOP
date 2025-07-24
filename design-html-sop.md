@@ -26,7 +26,8 @@ CopyEdit
 •	Set appropriate language in the <html lang="..."> tag.
 •	Use UTF-8 encoding with <meta charset="UTF-8">.
 ________________________________________
-🧱 2. Semantic HTML
+  ---
+## 🧱 2. Semantic HTML
 •	Use semantic tags:
 html
 CopyEdit
@@ -37,7 +38,8 @@ CopyEdit
 o	<a> for navigation.
 o	<button> for actions.
 ________________________________________
-🧼 3. Clean & Maintainable Code
+  ---
+## 🧼 3. Clean & Maintainable Code
 •	Use consistent indentation (2 or 4 spaces).
 •	Use lowercase tag and attribute names.
 •	Quote all attribute values:
@@ -51,7 +53,7 @@ CopyEdit
 <!-- Header Section -->
 <!-- Main Content -->
 ________________________________________
-🌐 4. SEO Best Practices
+## 🌐 4. SEO Best Practices
 •	Only one <h1> tag per page (describes the main topic).
 •	Use a relevant <title> and <meta name="description"> in the <head>.
 •	All <img> elements should include alt attributes.
@@ -60,7 +62,7 @@ html
 CopyEdit
 <a href="/services">View our services</a>
 ________________________________________
-♿ 5. Accessibility (a11y)
+## ♿ 5. Accessibility (a11y)
 •	Provide descriptive alt text for all images.
 •	Use semantic HTML to help screen readers.
 •	Add ARIA roles/labels when needed:
@@ -74,7 +76,7 @@ CopyEdit
 <label for="email">Email:</label>
 <input id="email" type="email" />
 ________________________________________
-📱 6. Responsive Design Structure
+## 📱 6. Responsive Design Structure
 •	Add this in the <head> for responsiveness:
 html
 CopyEdit
@@ -83,13 +85,13 @@ CopyEdit
 •	Avoid fixed pixel widths in HTML (use CSS).
 •	Build mobile-first with utility classes (BEM, Tailwind, etc.).
 ________________________________________
-🧩 7. Forms & Inputs
+## 🧩 7. Forms & Inputs
 •	Wrap form fields inside <form> tags.
 •	Use appropriate type attributes like email, tel, number.
 •	Add placeholder, required, and ARIA attributes where necessary.
 •	Use <fieldset> and <legend> to group form sections logically.
 ________________________________________
-⚙️ 8. Performance & Optimization
+## ⚙️ 8. Performance & Optimization
 •	Enable lazy loading on images:
 html
 CopyEdit
@@ -101,7 +103,7 @@ CopyEdit
 <script src="main.js" defer></script>
 •	Use modern image formats like WebP or AVIF.
 ________________________________________
-🎯 9. External Assets & Linking
+## 🎯 9. External Assets & Linking
 •	Link stylesheets and scripts cleanly:
 html
 CopyEdit
@@ -112,7 +114,7 @@ html
 CopyEdit
 <a href="https://external.com" target="_blank" rel="noopener noreferrer">Visit Site</a>
 ________________________________________
-🧾 10. Developer QA Checklist
+## 🧾 10. Developer QA Checklist
 Task	Status
 HTML5 doctype and language attribute	✅ / ❌
 All tags are semantically structured	✅ / ❌
