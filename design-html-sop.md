@@ -1,15 +1,11 @@
-# 🎨 Developer SOP: HTML Design Standards
-
-This SOP outlines best practices for writing HTML markup that is clean, semantic, accessible, SEO-friendly, and easy to maintain.
-
----
-
-## 📁 1. HTML File Structure
-
-- Always start with the HTML5 doctype:
-
-  ```html
-  <!DOCTYPE html>
+🎨 Developer SOP: HTML Design Standards
+This SOP outlines best practices for writing HTML that is clean, semantic, accessible, SEO-friendly, and easy to maintain.
+________________________________________
+📁 1. HTML File Structure
+•	Always start with the HTML5 doctype:
+html
+CopyEdit
+<!DOCTYPE html>
 •	Standard document structure:
 html
 CopyEdit
@@ -24,97 +20,95 @@ CopyEdit
   </body>
 </html>
 •	Set appropriate language in the <html lang="..."> tag.
-•	Use UTF-8 encoding with <meta charset="UTF-8">.
+•	Use UTF-8 encoding: <meta charset="UTF-8">.
 ________________________________________
-  ---
-## 🧱 2. Semantic HTML
+🧱 2. Semantic HTML
 •	Use semantic tags:
 html
 CopyEdit
 <header>, <footer>, <main>, <article>, <section>, <nav>, <aside>
-•	Avoid excessive <div> or <span> nesting ("div soup").
-•	Use heading tags <h1> to <h6> in a logical, hierarchical order.
+•	Avoid unnecessary <div> or <span> nesting ("div soup").
+•	Use headings <h1> to <h6> in a logical, hierarchical order.
 •	Use:
 o	<a> for navigation.
 o	<button> for actions.
 ________________________________________
-  ---
-## 🧼 3. Clean & Maintainable Code
+🧼 3. Clean & Maintainable Code
 •	Use consistent indentation (2 or 4 spaces).
-•	Use lowercase tag and attribute names.
+•	Use lowercase for tag and attribute names.
 •	Quote all attribute values:
 html
 CopyEdit
 <input type="text" name="username" />
 •	Close all tags properly.
-•	Use comments to separate sections:
+•	Use clear section comments:
 html
 CopyEdit
 <!-- Header Section -->
 <!-- Main Content -->
 ________________________________________
-## 🌐 4. SEO Best Practices
-•	Only one <h1> tag per page (describes the main topic).
-•	Use a relevant <title> and <meta name="description"> in the <head>.
-•	All <img> elements should include alt attributes.
-•	Anchor links must use meaningful text:
+🌐 4. SEO Best Practices
+•	Only one <h1> tag per page (main topic).
+•	Use relevant <title> and <meta name="description"> tags in the <head>.
+•	All <img> elements should include descriptive alt attributes.
+•	Use meaningful link text:
 html
 CopyEdit
 <a href="/services">View our services</a>
 ________________________________________
-## ♿ 5. Accessibility (a11y)
+♿ 5. Accessibility (a11y)
 •	Provide descriptive alt text for all images.
-•	Use semantic HTML to help screen readers.
-•	Add ARIA roles/labels when needed:
+•	Use semantic tags to assist screen readers.
+•	Add ARIA roles/labels as needed:
 html
 CopyEdit
 <button aria-label="Close modal">✖</button>
-•	Ensure full keyboard accessibility.
-•	Label form fields correctly:
+•	Ensure full keyboard navigation.
+•	Label form fields properly:
 html
 CopyEdit
 <label for="email">Email:</label>
 <input id="email" type="email" />
 ________________________________________
-## 📱 6. Responsive Design Structure
-•	Add this in the <head> for responsiveness:
+📱 6. Responsive Design Structure
+•	Include this meta tag in the <head>:
 html
 CopyEdit
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-•	Use responsive containers and layout with Flexbox/Grid.
-•	Avoid fixed pixel widths in HTML (use CSS).
-•	Build mobile-first with utility classes (BEM, Tailwind, etc.).
+•	Use responsive containers with Flexbox or Grid.
+•	Avoid fixed pixel widths; handle layout in CSS.
+•	Build mobile-first using utility classes (e.g., BEM, Tailwind).
 ________________________________________
-## 🧩 7. Forms & Inputs
-•	Wrap form fields inside <form> tags.
-•	Use appropriate type attributes like email, tel, number.
-•	Add placeholder, required, and ARIA attributes where necessary.
-•	Use <fieldset> and <legend> to group form sections logically.
+🧩 7. Forms & Inputs
+•	Wrap fields in <form> tags.
+•	Use appropriate type attributes: email, tel, number, etc.
+•	Use placeholder, required, and ARIA attributes as needed.
+•	Group related fields with <fieldset> and <legend>.
 ________________________________________
-## ⚙️ 8. Performance & Optimization
-•	Enable lazy loading on images:
+⚙️ 8. Performance & Optimization
+•	Enable lazy loading for images:
 html
 CopyEdit
 <img src="image.webp" loading="lazy" alt="..." />
-•	Avoid inline CSS and JavaScript.
+•	Avoid inline CSS/JS when possible.
 •	Use defer or async for non-critical scripts:
 html
 CopyEdit
 <script src="main.js" defer></script>
-•	Use modern image formats like WebP or AVIF.
+•	Prefer modern image formats: WebP, AVIF.
 ________________________________________
-## 🎯 9. External Assets & Linking
+🎯 9. External Assets & Linking
 •	Link stylesheets and scripts cleanly:
 html
 CopyEdit
 <link rel="stylesheet" href="styles.css" />
 <script src="main.js" defer></script>
-•	For external links, always use:
+•	For external links, always include security attributes:
 html
 CopyEdit
 <a href="https://external.com" target="_blank" rel="noopener noreferrer">Visit Site</a>
 ________________________________________
-## 🧾 10. Developer QA Checklist
+🧾 10. Developer QA Checklist
 Task	Status
 HTML5 doctype and language attribute	✅ / ❌
 All tags are semantically structured	✅ / ❌
@@ -123,7 +117,7 @@ All images include descriptive alt text	✅ / ❌
 Meta title and description are set and unique	✅ / ❌
 Links are descriptive and accessible	✅ / ❌
 Forms use proper labels and input types	✅ / ❌
-HTML is W3C validated (https://validator.w3.org)
+HTML is W3C validated (validator.w3.org)
 ✅ / ❌
 Page is responsive with viewport meta	✅ / ❌
 Scripts and styles are properly linked and deferred	✅ / ❌
@@ -133,8 +127,4 @@ HTML is cleanly indented and commented	✅ / ❌
 Keyboard accessibility is verified	✅ / ❌
 ________________________________________
 Last updated: 2025-07-24
-yaml
-CopyEdit
-
----
 
