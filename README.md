@@ -113,6 +113,3 @@
 | Sitemap and robots.txt configured correctly          | ✅/❌   |
 | Structured data passes Google’s Rich Results test    | ✅/❌   |
 
----
-
-> Last updated: `{{ YYYY-MM-DD }}`
