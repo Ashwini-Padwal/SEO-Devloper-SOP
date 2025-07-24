@@ -27,4 +27,6 @@ This SOP outlines best practices for writing HTML markup that is clean, semantic
 ```
 - Set appropriate language in the <html lang="..."> tag.
 - Use proper character encoding with <meta charset="UTF-8">.
-- 
+
+  #🧱 2. Semantic HTML
+- Use semantic tags to describe content:
